@@ -4,9 +4,6 @@ titles:
   en: About
 key: page-about
 ---
-
-
-
 {% highlight python %}
 print("Hello world")
 {% endhighlight %}
@@ -14,4 +11,8 @@ print("Hello world")
 ## Skills
 
 - C,C++,Python 3
-- Machine leaning, NLP, embedded system
+- Linux, Embedded system (2010 ~), Machine leaning, NLP (2018~)
+
+## Personal information
+- master's program students (2018~)
+
