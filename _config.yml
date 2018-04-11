@@ -11,7 +11,7 @@
 #    |  |  \   --. /  .'.  \  |  |
 #    `--'   `----''--'   '--' `--'
 
-text_color_theme: dark #eg: default | dark | forest | ocean | chocolate | orange
+text_color_theme: default #eg: default | dark | forest | ocean | chocolate | orange
 ## Base settings ##
 # url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: /
@@ -44,10 +44,10 @@ timezone: Asia/Seoul #see https://en.wikipedia.org/wiki/List_of_tz_database_time
 ## Author & social ##
 author:
   name: Someone
-  # email:  #your Email address e.g. someone@site.com
+  # email:  sjs2109@gmail.com
   # facebook:  #your Facebook username
   # twitter:  #your Twitter username
-  # github:  #your GitHub username
+  # github:  lovetube
   # googleplus:  #your Google+ username
   # weibo:  #your Weibo username
   # douban:  #your Douban username
