@@ -20,7 +20,7 @@ title:  "markdown sample"
     * 파랑
 
 
-```C++
+```c
 printf("hello,world\n");
 ```
 
