@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello world"
+title:  "markdown sample"
 ---
 # This is a H1
 ## This is a H2
