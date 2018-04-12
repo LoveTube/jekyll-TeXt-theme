@@ -20,10 +20,6 @@ title:  "markdown sample"
     * 파랑
 
 
-```c
-printf("hello,world\n");
-```
-
 ```python
 print("hello,world\n");
 ```
