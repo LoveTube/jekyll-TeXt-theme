@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {%- include snippets/get-lang.html -%}
 <html lang="{{ __return }}">
+  <head>
     {%- include common-head.html -%}
     {%- include head-icons-rel.html -%}
     {%- assign __path = '/assets/css/blog.css' -%}
@@ -44,8 +45,8 @@
         {%- include scripts/all.js -%}
       </script>
     {%- endif -%}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_SVG"></script>
     <script>
+      {%- include scripts/components/mathjax.js -%}
       {%- include scripts/components/mermaid.js -%}
       {%- include scripts/components/chart.js -%}
       {%- include scripts/components/google-analytics.js -%}
