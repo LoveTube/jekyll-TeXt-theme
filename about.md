@@ -16,4 +16,5 @@ print("Hello world")
 ## Personal information
 - Master's program student (2018~)
 - INTJ
+- sjs2109@gmail.com
 
