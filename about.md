@@ -14,5 +14,6 @@ print("Hello world")
 - Linux, Embedded system (2010~), Machine leaning, NLP (2018~)
 
 ## Personal information
-- master's program students (2018~)
+- Master's program student (2018~)
+- INTJ
 
