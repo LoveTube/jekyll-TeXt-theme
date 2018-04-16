@@ -66,7 +66,7 @@ stemming하는 방법 중 대표적 방법
 * 2-grams (aka bigrams)
 --> (I notice), (notice three), (three guys), (guys standing), (standing on), (on the)
 ## language model
-*  `$P(w_5)$`
+*  $$P(w_5)$$
 
 ## The Chain rule
 위 language model을 예측하기 위해서는 아래 식을 계산하면 된다 ~~이론적으로는 말이지~~
