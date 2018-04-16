@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 {%- include snippets/get-lang.html -%}
 <html lang="{{ __return }}">
+  <script type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js">
+</script>
   <head>
     {%- include common-head.html -%}
     {%- include head-icons-rel.html -%}
@@ -46,7 +49,6 @@
       </script>
     {%- endif -%}
     <script>
-      {%- include scripts/components/mathjax.js -%}
       {%- include scripts/components/mermaid.js -%}
       {%- include scripts/components/chart.js -%}
       {%- include scripts/components/google-analytics.js -%}
