@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 2018-1 NLP 중간고사 정리
+customjs:
+ - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 ---
 
 자연어 처리 중간고사가 2주전이다. 여기에다가 공부내용을 정리해둔다. ~~하지만 벌써 일주일전~~
