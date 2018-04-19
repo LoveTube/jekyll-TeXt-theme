@@ -11,10 +11,9 @@ print("Hello world")
 ## Skills and interests
 
 - C,C++,Python 3
-- Linux, Embedded system (2010~), Machine leaning, NLP (2018~)
+- Linux, Embedded system, Machine leaning, NLP
 
 ## Personal information
-- Master's program student (2018~)
 - INTJ
 - sjs2109@gmail.com
 
