@@ -64,7 +64,7 @@ STATISTICS:
   zh-Hant: "共計 [POST_COUNT] 篇文章，[PAGE_COUNT] 頁。"
 
 LICENSE_ANNOUNCE:
-  en:      "This work is licensed under a [LICENSE] license."
+  en:      "This work is licensed under a [LICENSE] license. External material follows original copyright."
   zh:      "本文遵守 [LICENSE] 许可协议。"
   zh-Hans: "本文遵守 [LICENSE] 许可协议。"
   zh-Hant: "本文遵守 [LICENSE] 許可協議。"
