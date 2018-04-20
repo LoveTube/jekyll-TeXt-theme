@@ -51,6 +51,10 @@ stemming하는 방법 중 대표적 방법
 ![MED](https://sjs2109.github.io/assets/images/TheEditDistanceTableResult.jpg)
 ### Backtrace
 **아래로 가는 길은 하나가 아니다.**
+1. 오른쪽 위 부터 0까지 화살표를 따라가면서 기록한다.
+2. 기록된 화살표의 방향에 따라 insert, delete, substitution을 적는다
+3. 왼쪽에 세로로 적은 단어에 연산들을 적용하면 끝
+
 ![Backtrace](https://sjs2109.github.io/assets/images/MinEditwithBacktrace.jpg)
 ![Backtrace](https://sjs2109.github.io/assets/images/backtrace.jpg)
 ![Backtrace](https://sjs2109.github.io/assets/images/backtrace_algorithm.jpg)
@@ -160,8 +164,8 @@ HMM은 3개의 문제를 해결하는 것으로 볼 수도 있는데 각각은 �
 * learning 문제 → Baum-Welch algorithm으로 해결
 하나하나 자세히 보고 싶지만 시험이 코 앞이라 ~~핑계가 좋다~~ 일단 수업시간에 다룬 Viterbi algorithm만 정리한다. 나중에 시험 끝나고 HMM은 따로 정리해야 할 듯
 ### Viterbi algorithm
-[](http://cs.kangwon.ac.kr/~leeck/NLP/06-2_viterbi.pdf)
-[](https://en.wikipedia.org/wiki/Viterbi_algorithm)
+* [kangwon](http://cs.kangwon.ac.kr/~leeck/NLP/06-2_viterbi.pdf)
+* [wikipedia](https://en.wikipedia.org/wiki/Viterbi_algorithm)
 ## Evaluation
 ### cross-validation
 dataset을 어려개로 나누고 나누어진 dataset을 training/testing dataset으로 바꾸어가면서 검증
