@@ -77,10 +77,10 @@ leancloud:
   # app_key:  #LeanCloud App key
   # app_class:  #LeanCloud App class
 
-# mathjax: true
-# mathjax_autoNumber: true
-# mermaid: true
-# chart: true
+# mathjax: false
+# mathjax_autoNumber: false
+# mermaid: false
+# chart: false
 
 ## Paginate ##
 paginate: 7
