@@ -67,7 +67,7 @@ stemming하는 방법 중 대표적 방법
 ## language model
  * A statistical language model is a probability distribution over sequences of words. Given such a sequence, say of length m, it assigns a probability $$ P(w_1,... ,w_m)$$ to the whole sequence.
 
-$$P(w_5$$ \| $$w_1,w_2,w_3,w_4)$$ → $$w_1,w_2,w_3,w_4$$ 가 연속되었을 때 $$w_5$$ 가 나올 확률을 나타낸다
+ * $$P(w_5$$ \| $$w_1,w_2,w_3,w_4)$$ → $$w_1,w_2,w_3,w_4$$ 가 연속되었을 때 $$w_5$$ 가 나올 확률을 나타낸다
 
 ## The Chain rule
 위 language model을 예측하기 위해서는 아래 식을 계산하면 된다 ~~이론적으로는 말이지~~
