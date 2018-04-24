@@ -161,10 +161,10 @@ HMM은 3개의 문제를 해결하는 것으로 볼 수도 있는데 각각은 �
 * learning 문제 → Baum-Welch algorithm으로 해결
 하나하나 자세히 보고 싶지만 시험이 코 앞이라 ~~핑계가 좋다~~ 일단 수업시간에 다룬 Viterbi algorithm만 정리한다. 나중에 시험 끝나고 HMM은 따로 정리해야 할 듯
 ### Viterbi algorithm
-[](http://cs.kangwon.ac.kr/~leeck/NLP/06-2_viterbi.pdf)
-[](https://en.wikipedia.org/wiki/Viterbi_algorithm)
+[kangwon](http://cs.kangwon.ac.kr/~leeck/NLP/06-2_viterbi.pdf)
+[wikipedia](https://en.wikipedia.org/wiki/Viterbi_algorithm)
 ## Evaluation
-###cross-validation
+### cross-validation
 dataset을 어려개로 나누고 나누어진 dataset을 training/testing dataset으로 바꾸어가면서 검증
 https://en.wikipedia.org/wiki/Cross-validation_(statistics)
 ### 참고자료
