@@ -7,7 +7,7 @@ title:  bigdata mining 5장
 # Over-fitting the data
 
 알고 있는 데이터에 대해서는 아주 완벽하게 분류할 수 있으나 비슷한 것들에 대해서는 잘 모르게 되는 상태
-아래 그림처럼 **부드럽게** 분류를 해야 하는데 현재 데이터에 집중하다보니 현재 데이터에**만** 잘 맞고 일반적인 데이터에 안맞는 상태 이렇게 되면 기껏 만들어서 일부데이터에만 맞게 되니 일반화를 해줘야함 
+아래 그림처럼 **부드럽게** 분류를 해야 하는데 현재 데이터에 집중하다보니 현재 데이터에**만** 잘 맞고 일반적인 데이터에 안맞는 상태 이렇게 되면 기껏 만들어서 일부데이터에만 맞게 ~~개고생하게~~ 되니 일반화를 해줘야함 
 
 
 ![aws_data](https://docs.aws.amazon.com/machine-learning/latest/dg/images/mlconcepts_image5.png)
@@ -39,7 +39,9 @@ title:  bigdata mining 5장
 ## Example: Classifying Flowers
 
 아래 그래프들는 attribute가 늘어날 수록 overfitting이 된다는 것을 보여주며 logistic regression이 SVM보다 overfitting일어날 가능성이 높다고 말하고 있다 잠깐 왜  logisistic regression이 SVM보다 overfitting이 잘 일어나는거지? 일단 교과서에서는 outlier에 logitstic regression이 좀 더 취약하다고 한다. 잠시 logistic regression 을 수식으로 나타내면 아래와 같다
-$$σ(t)$$  = $$1 \over e^-t(x)$$ where  $$t(x) = α_0 + α_1x_1 + α_2x_2 + a_3x_3+ ... $$
+
+* $$σ(t)$$  = $$1 \over e^-t(x)$$ where  $$t(x) = α_0 + α_1x_1 + α_2x_2 + a_3x_3+ ... $$
+
 이런 상황이니 새로운 값이 들어오면 변화가 큰 것 같다
 ![Example: Classifying Flowers](https://sjs2109.github.io/assets/images/2018-4-20-bigdatamining_lec5/07.jpg)
 ![Example: Classifying Flowers](https://sjs2109.github.io/assets/images/2018-4-20-bigdatamining_lec5/08.jpg)
@@ -110,7 +112,7 @@ feature selection이 어떤식으로 Generalization에 기여하는지 찾아보
 
 데이터를 여러 덩어리로 나누고 각각 덩어리들을 training set / test set으로 나누고 그결과를 평균해서 구한다. 자세한 내용은 아래 글을 참고할 것
 
-> K-fold cross validation is one way to improve over the holdout method. The data set is divided into k subsets, and the holdout method is repeated k times. Each time, one of the k subsets is used as the test set and the other k-1 subsets are put together to form a training set. Then the average error across all k trials is computed. The advantage of this method is that it matters less how the data gets divided. Every data point gets to be in a test set exactly once, and gets to be in a training set k-1 times. The variance of the resulting estimate is reduced as k is increased. The disadvantage of this method is that the training algorithm has to be rerun from scratch k times, which means it takes k times as much computation to make an evaluation. A variant of this method is to randomly divide the data into a test and training set k different times. The advantage of doing this is that you can independently choose how large each test set is and how many trials you average over.
+> K-fold cross validation is one way to improve over the holdout method. **The data set is divided into k subsets, and the holdout method is repeated k times. Each time, one of the k subsets is used as the test set and the other k-1 subsets are put together to form a training set.** Then the average error across all k trials is computed. The advantage of this method is that it matters less how the data gets divided. Every data point gets to be in a test set exactly once, and gets to be in a training set k-1 times. The variance of the resulting estimate is reduced as k is increased. The disadvantage of this method is that the training algorithm has to be rerun from scratch k times, which means it takes k times as much computation to make an evaluation. A variant of this method is to randomly divide the data into a test and training set k different times. The advantage of doing this is that you can independently choose how large each test set is and how many trials you average over.
 
 ![Holdout validation](https://sjs2109.github.io/assets/images/2018-4-20-bigdatamining_lec5/14.jpg)
 ![Cross-Validation](https://sjs2109.github.io/assets/images/2018-4-20-bigdatamining_lec5/15.jpg)
@@ -132,7 +134,7 @@ feature selection이 어떤식으로 Generalization에 기여하는지 찾아보
 
 # Logistic Regression vs Tree Induction
 
-각 algorithm의 특징을 적어주고 있다 실제 해당 algorithm들을 비교한 [논문](http://www.jmlr.org/papers/volume4/perlich03a/perlich03a.pdf)을 보면 아래 슬라이드 처럼 나온다. 하지만 왜 그런지는 아주 **두루뭉술**하게 이야기 하고 있다 다만 생각해보면 logistic regression는 Linear한 model이고 decision tree는  non-linear하다보니 이런 결과가 나온 것 같다
+각 algorithm의 특징을 적어주고 있다 실제 해당 algorithm들을 비교한 [논문](http://www.jmlr.org/papers/volume4/perlich03a/perlich03a.pdf)을 보면 아래 슬라이드 처럼 나온다. 하지만 왜 그런지는 교과서에는 조금  **두루뭉술**하게 이야기 하고 있다 다만 생각해보면 logistic regression는 Linear한 model이고 decision tree는  non-linear하다보니 이런 결과가 나온 것 같다
 
 ![Generalization Performance](https://sjs2109.github.io/assets/images/2018-4-20-bigdatamining_lec5/21.jpg)
 
