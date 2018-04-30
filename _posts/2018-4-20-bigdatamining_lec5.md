@@ -134,7 +134,7 @@ feature selection이 어떤식으로 Generalization에 기여하는지 찾아보
 
 # Logistic Regression vs Tree Induction
 
-각 algorithm의 특징을 적어주고 있다 실제 해당 algorithm들을 비교한 [논문](http://www.jmlr.org/papers/volume4/perlich03a/perlich03a.pdf)을 보면 아래 슬라이드 처럼 나온다. 하지만 왜 그런지는 교과서에는 조금  **두루뭉술**하게 이야기 하고 있다 다만 생각해보면 logistic regression는 Linear한 model이고 decision tree는  non-linear하다보니 이런 결과가 나온 것 같다
+각 algorithm의 특징을 적어주고 있다 실제 해당 algorithm들을 비교한 [논문](http://www.jmlr.org/papers/volume4/perlich03a/perlich03a.pdf)을 보면 아래 슬라이드 처럼 나온다.
 
 ![Generalization Performance](https://sjs2109.github.io/assets/images/2018-4-20-bigdatamining_lec5/21.jpg)
 
