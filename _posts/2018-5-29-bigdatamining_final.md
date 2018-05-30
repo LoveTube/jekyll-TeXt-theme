@@ -95,7 +95,6 @@ J(A,B) = $$ |A ∩ B| \over |A ∪ B| $$ = $$ |A ∩ B| \over |A| + |B| - |A ∩
 
 ## Expected profit![confusion_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/ev.jpeg)
 ## cost-benefit matrix
-cost-benefit matrix 는 시험에 출제할거 같다고 하셨음
 ![cost_benefit_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/cost_benefit_matrix.jpeg)
 ## ROC Graphs and Curves
 ![ROCgraph](https://sjs2109.github.io/assets/images/2018-5-29-bigdatamining_final/ROC_graph.jpeg)
