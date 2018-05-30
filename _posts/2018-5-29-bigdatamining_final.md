@@ -88,18 +88,18 @@ J(A,B) = $$ |A ∩ B| \over |A ∪ B| $$ = $$ |A ∩ B| \over |A| + |B| - |A ∩
 ## confusion matrix 
 ![confusion_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/confusion_matrix.jpeg)
 
-## Evaluation Metrics (중요)
-### Precision = #$ tp \over {tp + fp} $$
-### Recall= $$ tp \over {tp + fp} $$
-### F−measure = 2 ×  $$ {Precision x Recall} \over {Precision + Recall} $$
+## Other Evaluation Metrics
+* Precision = $$ tp \over {tp + fp} $$
+* Recall= $$ tp \over {tp + fp} $$
+* F−measure = 2 ×  $$ {Precision x Recall} \over {Precision + Recall} $$
 
 ## Expected profit![confusion_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/ev.jpeg)
 ## cost-benefit matrix
 cost-benefit matrix 는 시험에 출제할거 같다고 하셨음
 ![cost_benefit_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/cost_benefit_matrix.jpeg)
 ## ROC Graphs and Curves
-![ROC graph](sjs2109.github.io/assets/images/2018-5-29-bigdatamining_final/ROC_graph.jpeg)
-![ROC Curve](sjs2109.github.io/assets/images/2018-5-29-bigdatamining_final/ROC_curve.jpeg)
+![ROCgraph](https://sjs2109.github.io/assets/images/2018-5-29-bigdatamining_final/ROC_graph.jpeg)
+![ROCCurve](https://sjs2109.github.io/assets/images/2018-5-29-bigdatamining_final/ROC_curve.jpeg)
 * ROC graphs decouple classifier performance from the conditions
 under which the classifiers will be used
 * ROC graphs are independent of the class proportions as well as the
