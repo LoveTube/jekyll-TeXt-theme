@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2018-5-29-bigdatamining_final
+title: big data mining 기말 정리
 ---
 시험범위가 전범위라  이번학기 배운 전체 내용에 대해 급하게 정리한다.
 # Classifier
@@ -60,14 +60,11 @@ k-평균 클러스터링 알고리즘은 클러스터링 방법 중 분할법에
 
 ## Linear regression
 선형 회귀는 선형 예측 함수를 사용해 회귀식을 모델링하며, 알려지지 않은 파라미터는 데이터로부터 추정한다. 이렇게 만들어진 회귀식을 선형 모델이라고 한다.
-
 선형 회귀는 깊이있게 연구되고 널리 사용된 첫 번째 회귀분석 기법이다.[3] 이는 알려지지 않은 파라미터에 대해 선형 관계를 갖는 모델을 세우는 것이, 비선형 관계를 갖는 모델을 세우는 것보다 용이하기 때문이다.
-
-선형 회귀는 여러 사용 사례가 있지만, 대개 아래와 같은 두 가지 분류 중 하나로 요약할 수 있다.
-
 값을 예측하는 것이 목적일 경우, 선형 회귀를 사용해 데이터에 적합한 예측 모형을 개발한다. 개발한 선형 회귀식을 사용해 y가 없는 x값에 대해 y를 예측하기 위해 사용할 수 있다.
 종속 변수 y와 이것과 연관된 독립 변수 X1, ..., Xp가 존재하는 경우에, 선형 회귀 분석을 사용해 Xj와 y의 관계를 정량화할 수 있다. Xj는 y와 전혀 관계가 없을 수도 있고, 추가적인 정보를 제공하는 변수일 수도 있다.
 일반적으로 최소제곱법(least square method)을 사용해 선형 회귀 모델을 세운다. 최소제곱법 외에 다른 기법으로도 선형 회귀 모델을 세울 수 있다. 손실 함수(loss fuction)를 최소화 하는 방식으로 선형 회귀 모델을 세울 수도 있다. 최소제곱법은 선형 회귀 모델 뿐 아니라, 비선형 회귀 모델에도 적용할 수 있다. 최소제곱법과 선형 회귀는 가깝게 연관되어 있지만, 그렇다고 해서 동의어는 아니다.
+
 ## Overfitting & Regularization
 [overfiting](https://sjs2109.github.io/2018/04/20/bigdatamining_lec5.html)
 ## Prunning
@@ -92,16 +89,31 @@ J(A,B) = $$ |A ∩ B| \over |A ∪ B| $$ = $$ |A ∩ B| \over |A| + |B| - |A ∩
 ![confusion_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/confusion_matrix.jpeg)
 
 ## Evaluation Metrics (중요)
-### Precision = $ tp \over {tp + fp} $
-### Recall= $ tp \over {tp + fp} $
-### F−measure = 2 ×  $ {Precision x Recall} \over {Precision + Recall} $
+### Precision = #$ tp \over {tp + fp} $$
+### Recall= $$ tp \over {tp + fp} $$
+### F−measure = 2 ×  $$ {Precision x Recall} \over {Precision + Recall} $$
 
 ## Expected profit![confusion_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/ev.jpeg)
 ## cost-benefit matrix
 cost-benefit matrix 는 시험에 출제할거 같다고 하셨음
 ![cost_benefit_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/cost_benefit_matrix.jpeg)
 ## ROC Graphs and Curves
-TBD?
+![ROC graph](sjs2109.github.io/assets/images/2018-5-29-bigdatamining_final/ROC_graph.jpeg)
+![ROC Curve](sjs2109.github.io/assets/images/2018-5-29-bigdatamining_final/ROC_curve.jpeg)
+* ROC graphs decouple classifier performance from the conditions
+under which the classifiers will be used
+* ROC graphs are independent of the class proportions as well as the
+costs and benefits
+* Not the most intuitive visualization for many business stakeholders
+
+### Algorithm
+* Sort the test set by the model predictions
+* Start with cutoff = max (prediction)
+* Decrease cutoff, after each step count the number of true positives
+TP (positives with prediction above the cutoff) and false positives FP
+(negatives above the cutoff)
+* Calculate TP rate (TP/P) and FP (FP/N) rate
+* Plot current number of TP/P as a function of current FP/N
 ## AUC
 https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ko
 ## Cumulative Response curve
