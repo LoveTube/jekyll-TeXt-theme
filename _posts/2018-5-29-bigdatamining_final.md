@@ -76,6 +76,8 @@ Prunning 아래와 같이 두가지가 있다
 $$ d_1(p,q)$$ = $$ |p-q|_1 $$ = $$ \sum_{i=1}^n |p_i-q_i| $$
 ### Cosine Distance
 $$d_{cosine}(X,Y)$$ = 1- $$ XY \over {|X|^2 |Y|^2} $$
+$$D_c$$ = 1 - $$S_c$$ where $$D_c$$ is the cosine distance and $$S_c$$ is the cosine similarity
+similarity = $$cos(\theta)$$ = $${A \cdot B \over |A| |B|}$$ = $$\frac{ \sum\limits_{i=1}^{n}{A_i \times B_i} }{ \sqrt{\sum\limits_{i=1}^{n}{(A_i)^2}} \times \sqrt{\sum\limits_{i=1}^{n}{(B_i)^2}} }$$
 ### jaccard Distance
 J(A,B) = $$ |A ∩ B| \over |A ∪ B| $$ = $$ |A ∩ B| \over |A| + |B| - |A ∩ B| $$
 
@@ -134,3 +136,4 @@ TP (positives with prediction above the cutoff) and false positives FP
 * http://www.saedsayad.com/decision_tree_overfitting.htm
 * https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ko
 * https://www.u-cursos.cl/ingenieria/2017/1/IN5528/1/material_docente/bajar?id_material=1752815
+* http://euriion.com/?p=548
