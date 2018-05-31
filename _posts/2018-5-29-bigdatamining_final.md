@@ -57,9 +57,14 @@ k-평균 클러스터링 알고리즘은 클러스터링 방법 중 분할법에
 ## Overfitting & Regularization
 [overfiting](https://sjs2109.github.io/2018/04/20/bigdatamining_lec5.html)
 ## Prunning
-[Prunning](http://www.saedsayad.com/decision_tree_overfitting.htm)
+Prunning 아래와 같이 두가지가 있다
+* Pre-pruning that stop growing the tree earlier, before it perfectly classifies the training set.
+* Post-pruning that allows the tree to perfectly classify the training set, and then post prune the tree. 
+
 ## supervised vs unsupervised learning![supervised_vs_unsupervised](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/supervised_vs_unsupervised.jpeg)
 ## Information Gain
+* Entropy = $$-p_1log(p_1) - p_2log(p_2) -p_3log(p_3) - ⋯⋯⋯⋯ $$
+* Information Gain = IG(parent, children) = entropy(parent) - $$p(c_1) × entropy(c_1) + p(c_2) × entropy(c_2)$$ + ⋯
  [IG](http://link.koreatech.ac.kr/?p=510)
 # Evaluation
 ## distance
@@ -103,15 +108,31 @@ TP (positives with prediction above the cutoff) and false positives FP
 * Calculate TP rate (TP/P) and FP (FP/N) rate
 * Plot current number of TP/P as a function of current FP/N
 ## AUC
+* ROC curve
+구글님은 아래처럼 말해주고 있다
+> 다양한 분류 임계값에서 참긍정률과 거짓긍정률이 이루는 곡선입니다. ROC 곡선은 다양한 분류 임계값의 TPR 및 FPR을 나타냅니다. 분류 임계값을 낮추면 더 많은 항목이 양성으로 분류되므로 거짓양성과 참양성이 모두 증가합니다. 
+
+* AUC
+또 구글님의 말을 적어보면
+
+> 가능한 모든 분류 임계값을 고려하는 평가 측정항목입니다. AUC(ROC 곡선 아래 영역)는 무작위로 선택한 긍정 예가 실제로 긍정일 가능성이 무작위로 선택한 부정 예가 긍정일 가능성보다 높다고 분류자가 신뢰할 확률입니다.
+
 [AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ko)
 ## Cumulative Response curve
+* Percentage of positive correctly classified (y-axis) vs the percentage of the population that is tangled (x-axis)
+* y = x : random performance
+* Any classifier above the diagonal is providing some advantage
+
 [link](https://www.u-cursos.cl/ingenieria/2017/1/IN5528/1/material_docente/bajar?id_material=1752815)
 ## Lift Curve
-
-[Lift Curve](http://www2.cs.uregina.ca/~dbd/cs831/notes/lift_chart/lift_chart.html)
+* The lift of a classifier represents the advantage it provides over random guessing.
+* lift = $$ {TP rate(x)} \over x $$
 
 # 참고자료
 * https://ko.wikipedia.org/wiki/결정_트리_학습법
 * https://ko.m.wikipedia.org/wiki/서포트_벡터_머신
 * http://en.wikipedia.org
 * http://ko.wikipedia.org
+* http://www.saedsayad.com/decision_tree_overfitting.htm
+* https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ko
+* https://www.u-cursos.cl/ingenieria/2017/1/IN5528/1/material_docente/bajar?id_material=1752815
