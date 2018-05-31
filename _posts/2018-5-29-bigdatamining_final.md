@@ -29,7 +29,7 @@ title: big data mining 기말 정리
 패턴 인식에서, k-최근접 이웃 알고리즘(또는 줄여서 k-NN)은 분류나 회귀에 사용되는 비모수 방식이다.[1] 두 경우 모두 입력이 특징 공간 내 k개의 가장 가까운 훈련 데이터로 구성되어 있다. 출력은 k-NN이 분류로 사용되었는지 또는 회귀로 사용되었는지에 따라 다르다.k-NN 분류에서 출력은 소속된 항목이다. 객체는 k개의 최근접 이웃 사이에서 가장 공통적인 항목에 할당되는 객체로 과반수 의결에 의해 분류된다(k는 양의 정수이며 통상적으로 작은 수). 만약 k = 1 이라면 객체는 단순히 하나의 최근접 이웃의 항목에 할당된다.k-NN 회귀에서 출력은 객체의 특성 값이다. 이 값은 k개의 최근접 이웃이 가진 값의 평균이다.k-NN은 함수가 오직 지역적으로 근사하고 모든 계산이 분류될 때까지 연기되는 인스턴스 기반 학습 또는 게으른 학습의 일종이다. k-NN 알고리즘은 가장 간단한 기계 학습 알고리즘에 속한다.분류와 회귀 모두 더 가까운 이웃일수록 더 먼 이웃보다 평균에 더 많이 기여하도록 이웃의 기여에 가중치를 주는 것이 유용할 수 있다. 예를 들어, 가장 흔한 가중치 스키마는 d가 이웃까지의 거리일 때 각각의 이웃에게 1/d의 가중치를 주는 것이다. 이웃은 항목(k-NN 분류의 경우)이나 객체 특성 값(k-NN 회귀의 경우)이 알려진 객체의 집합으로부터 구해진다. 이것은 명시적인 훈련 과정이 필요하지는 않지만, 알고리즘을 위한 훈련 집합이라고 생각될 수 있다.
 
 ### Algorithm
-https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/#how-does-knn-work
+[Algorithm](https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/#how-does-knn-work)
 
 ## KMN
 k-평균 클러스터링 알고리즘은 클러스터링 방법 중 분할법에 속한다. 분할법은 주어진 데이터를 여러 파티션 (그룹) 으로 나누는 방법이다. 예를 들어 n개의 데이터 오브젝트를 입력받았다고 가정하자. 이 때 분할법은 입력 데이터를 n보다 작거나 같은 k개의 그룹으로 나누는데, 이 때 각 군집은 클러스터를 형성하게 된다. 다시 말해, 데이터를 한 개 이상의 데이터 오브젝트로 구성된 k개의 그룹으로 나누는 것이다. 이 때 그룹을 나누는 과정은 거리 기반의 그룹간 비유사도 (dissimilarity) 와 같은 비용 함수 (cost function) 을 최소화하는 방식으로 이루어지며, 이 과정에서 같은 그룹 내 데이터 오브젝트 끼리의 유사도는 증가하고, 다른 그룹에 있는 데이터 오브젝트와의 유사도는 감소하게 된다.[7] k-평균 알고리즘은 각 그룹의 중심 (centroid)과 그룹 내의 데이터 오브젝트와의 거리의 제곱합을 비용 함수로 정하고, 이 함수값을 최소화하는 방향으로 각 데이터 오브젝트의 소속 그룹을 업데이트 해 줌으로써 클러스터링을 수행하게 된다.
@@ -103,13 +103,15 @@ TP (positives with prediction above the cutoff) and false positives FP
 * Calculate TP rate (TP/P) and FP (FP/N) rate
 * Plot current number of TP/P as a function of current FP/N
 ## AUC
-https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ko
+[AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ko)
 ## Cumulative Response curve
-https://www.u-cursos.cl/ingenieria/2017/1/IN5528/1/material_docente/bajar?id_material=1752815
+[link](https://www.u-cursos.cl/ingenieria/2017/1/IN5528/1/material_docente/bajar?id_material=1752815)
 ## Lift Curve
 
 [Lift Curve](http://www2.cs.uregina.ca/~dbd/cs831/notes/lift_chart/lift_chart.html)
 
-* 참고자료
-https://ko.wikipedia.org/wiki/결정_트리_학습법
-https://ko.m.wikipedia.org/wiki/서포트_벡터_머신
+# 참고자료
+* https://ko.wikipedia.org/wiki/결정_트리_학습법
+* https://ko.m.wikipedia.org/wiki/서포트_벡터_머신
+* http://en.wikipedia.org
+* http://ko.wikipedia.org
