@@ -63,14 +63,14 @@ Prunning 아래와 같이 두가지가 있다
 
 ## supervised vs unsupervised learning![supervised_vs_unsupervised](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/supervised_vs_unsupervised.jpeg)
 ## Information Gain
-* Entropy = $$-p_1log(p_1) - p_2log(p_2) -p_3log(p_3) - ⋯⋯⋯⋯ $$
-* Information Gain = IG(parent, children) = entropy(parent) - ($$p(c_1) × entropy(c_1) + p(c_2) × entropy(c_2)$$ + ⋯)
+* Entropy = $$-p_1log(p_1) - p_2log(p_2) -p_3log(p_3) - ⋯⋯ $$
+* Information Gain = IG(parent, children) = entropy(parent) - $$(p(c_1) × entropy(c_1) + p(c_2) × entropy(c_2) + ⋯)$$
 * [IG](http://link.koreatech.ac.kr/?p=510)
 # Evaluation
 ## distance
 ### Euclidean Distance
 **p** = $$(p_1, p_2,..., p_n)$$  **q** = $$(q_1, q_2,..., q_n)$$ 일때
-|**p** - **q**| = $$ \sqrt{|p|^ 2 +|q|^ 2 -2pq } \ $$
+|**p** - **q**| = |**q** - **p**| = $$ \sqrt{(p_1 - q_1)^2  + (p_2 - q_2)^2 + (p_3 - q_3)^2 + ⋯⋯ + (p_n - q_n)^2} \ $$
 ### Manhatten Distance
 **p** = $$(p_1, p_2,..., p_n)$$  **q** = $$(q_1, q_2,..., q_n)$$ 일때
 $$ d_1(p,q)$$ = $$ |p-q|_1 $$ = $$ \sum_{i=1}^n |p_i-q_i| $$
