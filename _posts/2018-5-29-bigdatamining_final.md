@@ -64,7 +64,7 @@ Prunning 아래와 같이 두가지가 있다
 ## supervised vs unsupervised learning![supervised_vs_unsupervised](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/supervised_vs_unsupervised.jpeg)
 ## Information Gain
 * Entropy = $$-p_1log(p_1) - p_2log(p_2) -p_3log(p_3) - ⋯⋯⋯⋯ $$
-* Information Gain = IG(parent, children) = entropy(parent) - $$p(c_1) × entropy(c_1) + p(c_2) × entropy(c_2)$$ + ⋯
+* Information Gain = IG(parent, children) = entropy(parent) - ($$p(c_1) × entropy(c_1) + p(c_2) × entropy(c_2)$$ + ⋯)
 * [IG](http://link.koreatech.ac.kr/?p=510)
 # Evaluation
 ## distance
