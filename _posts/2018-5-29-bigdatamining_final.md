@@ -79,7 +79,7 @@ J(A,B) = $$ |A ∩ B| \over |A ∪ B| $$ = $$ |A ∩ B| \over |A| + |B| - |A ∩
 
 ## Other Evaluation Metrics
 * Precision = $$ tp \over {tp + fp} $$
-* Recall= $$ tp \over {tp + fp} $$
+* Recall= $$ tp \over {tp + fn} $$
 * F−measure = 2 ×  $$ {Precision x Recall} \over {Precision + Recall} $$
 
 ## Expected profit![confusion_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/ev.jpeg)
