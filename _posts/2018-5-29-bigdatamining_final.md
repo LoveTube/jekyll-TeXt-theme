@@ -79,7 +79,7 @@ $$d_{cosine}(X,Y)$$ = 1- $$ XY \over {|X|^2 |Y|^2} $$
 $$D_c$$ = 1 - $$S_c$$ where $$D_c$$ is the cosine distance and $$S_c$$ is the cosine similarity
 similarity = $$cos(\theta)$$ = $${A \cdot B \over |A| |B|}$$ = $$\frac{ \sum\limits_{i=1}^{n}{A_i \times B_i} }{ \sqrt{\sum\limits_{i=1}^{n}{(A_i)^2}} \times \sqrt{\sum\limits_{i=1}^{n}{(B_i)^2}} }$$
 ### jaccard Distance
-J(A,B) = $$ |A ∩ B| \over |A ∪ B| $$ = $$ |A ∩ B| \over |A| + |B| - |A ∩ B| $$
+J(A,B) = 1- $$ |A ∩ B| \over |A ∪ B| $$ = 1- $$ |A ∩ B| \over |A| + |B| - |A ∩ B| $$
 
 ## confusion matrix 
 ![confusion_matrix](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/confusion_matrix.jpeg)
