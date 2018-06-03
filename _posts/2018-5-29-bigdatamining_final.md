@@ -101,9 +101,11 @@ Prunning 아래와 같이 두가지가 있다
 
 ## supervised vs unsupervised learning![supervised_vs_unsupervised](https://raw.githubusercontent.com/sjs2109/sjs2109.github.io/master/assets/images/2018-5-29-bigdatamining_final/supervised_vs_unsupervised.jpeg)
 ## Information Gain
-* Entropy = $$-p_1log(p_1) - p_2log(p_2) -p_3log(p_3) - ⋯⋯ $$
+* Entropy = $$-p_1log(p_1) - p_2log(p_2) -p_3log(p_3) - ⋯⋯ $$  → example들의 집합에서의 혼합성(impurity)을 나타냄 
 * Information Gain = IG(parent, children) = entropy(parent) - $$(p(c_1) × entropy(c_1) + p(c_2) × entropy(c_2) + ⋯)$$
+ →  지정된 속성이 얼마나 잘 training example들간을 구분하는가에 대한 수치. 특정 속성을 기준으로 example들을 구분하게될 때, '감소되는 entropy의 양'을 의미한다.
 * [IG](http://link.koreatech.ac.kr/?p=510)
+*  
 # Evaluation
 ## distance
 ### Euclidean Distance
@@ -176,3 +178,4 @@ TP (positives with prediction above the cutoff) and false positives FP
 * https://www.u-cursos.cl/ingenieria/2017/1/IN5528/1/material_docente/bajar?id_material=1752815
 * http://euriion.com/?p=548
 * https://www.edvancer.in/logistic-regression-vs-decision-trees-vs-svm-part2/
+* http://frontjang.info/entry/Entropy%EC%99%80-Information-Gain
