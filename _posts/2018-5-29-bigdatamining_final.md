@@ -104,6 +104,7 @@ Prunning 아래와 같이 두가지가 있다
 * Entropy = $$-p_1log(p_1) - p_2log(p_2) -p_3log(p_3) - ⋯⋯ $$  → example들의 집합에서의 혼합성(impurity)을 나타냄 
 * Information Gain = IG(parent, children) = entropy(parent) - $$(p(c_1) × entropy(c_1) + p(c_2) × entropy(c_2) + ⋯)$$
  →  지정된 속성이 얼마나 잘 training example들간을 구분하는가에 대한 수치. 특정 속성을 기준으로 example들을 구분하게될 때, '감소되는 entropy의 양'을 의미한다.
+ * 분류나무는 구분 뒤 각 영역의 순도(homogeneity)가 증가, 불순도(impurity) 혹은 불확실성(uncertainty)이 최대한 감소하도록 하는 방향으로 학습을 진행합니다. 순도가 증가/불확실성이 감소하는 걸 두고 정보이론에서는 정보획득(information gain)이라고 합니다.
 * [IG](http://link.koreatech.ac.kr/?p=510)
 *  
 # Evaluation
@@ -179,3 +180,4 @@ TP (positives with prediction above the cutoff) and false positives FP
 * http://euriion.com/?p=548
 * https://www.edvancer.in/logistic-regression-vs-decision-trees-vs-svm-part2/
 * http://frontjang.info/entry/Entropy%EC%99%80-Information-Gain
+* https://ratsgo.github.io/machine%20learning/2017/03/26/tree/
