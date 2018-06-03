@@ -54,6 +54,44 @@ k-평균 클러스터링 알고리즘은 클러스터링 방법 중 분할법에
 종속 변수 y와 이것과 연관된 독립 변수 X1, ..., Xp가 존재하는 경우에, 선형 회귀 분석을 사용해 Xj와 y의 관계를 정량화할 수 있다. Xj는 y와 전혀 관계가 없을 수도 있고, 추가적인 정보를 제공하는 변수일 수도 있다.
 일반적으로 최소제곱법(least square method)을 사용해 선형 회귀 모델을 세운다. 최소제곱법 외에 다른 기법으로도 선형 회귀 모델을 세울 수 있다. 손실 함수(loss fuction)를 최소화 하는 방식으로 선형 회귀 모델을 세울 수도 있다. 최소제곱법은 선형 회귀 모델 뿐 아니라, 비선형 회귀 모델에도 적용할 수 있다. 최소제곱법과 선형 회귀는 가깝게 연관되어 있지만, 그렇다고 해서 동의어는 아니다.
 
+## Logistic Regression vs Decision Trees vs SVM
+### Logistic Regression
+#### Logistic Regression Pros:
+
+* Convenient probability scores for observations
+* Efficient implementations available across tools
+* Multi-collinearity is not really an issue and can be countered with L2 regularization to an extent
+* Wide spread industry comfort for logistic regression solutions [ oh that’s important too!]
+#### Logistic Regression Cons:
+
+* Doesn’t perform well when feature space is too large
+* Doesn’t handle large number of categorical features/variables well
+* Relies on transformations for non-linear features
+* Relies on entire data 
+
+### Decision Tree
+#### Decision Trees Pros:
+* Intuitive Decision Rules
+* Can handle non-linear features
+* Take into account variable interactions
+#### Decision Trees Cons:
+* Highly biased to training set [Random Forests to your rescue]
+* No ranking score as direct result
+
+### SVM
+#### SVM Pros:
+* Can handle large feature space
+* Can handle non-linear feature interactions
+* Do not rely on entire data
+#### SVM Cons:
+* Not very efficient with large number of observations
+* It can be tricky to find appropriate kernel sometimes
+
+### Conclusion
+* Always start with logistic regression, if nothing then to use the performance as baseline
+* See if decision trees (Random Forests) provide significant improvement. Even if you do not end up using the resultant model, you can use random forest results to remove noisy variables
+* Go for SVM if you have large number of features and number of observations are not a limitation for available resources and time
+
 ## Overfitting & Regularization
 [overfiting](https://sjs2109.github.io/2018/04/20/bigdatamining_lec5.html)
 ## Prunning
@@ -137,3 +175,4 @@ TP (positives with prediction above the cutoff) and false positives FP
 * https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ko
 * https://www.u-cursos.cl/ingenieria/2017/1/IN5528/1/material_docente/bajar?id_material=1752815
 * http://euriion.com/?p=548
+* https://www.edvancer.in/logistic-regression-vs-decision-trees-vs-svm-part2/
