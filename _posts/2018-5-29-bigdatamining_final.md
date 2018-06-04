@@ -62,6 +62,7 @@ k-평균 클러스터링 알고리즘은 클러스터링 방법 중 분할법에
 * Efficient implementations available across tools
 * Multi-collinearity is not really an issue and can be countered with L2 regularization to an extent
 * Wide spread industry comfort for logistic regression solutions [ oh that’s important too!]
+
 #### Logistic Regression Cons:
 
 * Doesn’t perform well when feature space is too large
@@ -74,6 +75,7 @@ k-평균 클러스터링 알고리즘은 클러스터링 방법 중 분할법에
 * Intuitive Decision Rules
 * Can handle non-linear features
 * Take into account variable interactions
+
 #### Decision Trees Cons:
 * Highly biased to training set [Random Forests to your rescue]
 * No ranking score as direct result
@@ -83,6 +85,7 @@ k-평균 클러스터링 알고리즘은 클러스터링 방법 중 분할법에
 * Can handle large feature space
 * Can handle non-linear feature interactions
 * Do not rely on entire data
+
 #### SVM Cons:
 * Not very efficient with large number of observations
 * It can be tricky to find appropriate kernel sometimes
